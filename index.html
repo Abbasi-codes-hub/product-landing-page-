@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Store | Premium Products</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">3DStore</div>
+        <ul class="nav-links">
+            <li><a href="#products">Products</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="cart-icon">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-count">0</span>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="title" data-scroll>Elevate Your Experience</h1>
+            <p class="subtitle" data-scroll>Discover our premium 3D-rendered products</p>
+            <button class="cta-button" data-scroll>Explore Collection</button>
+        </div>
+        <div class="product-3d-viewer" id="product-viewer"></div>
+    </section>
+
+    <section class="products-section" id="products">
+        <h2 class="section-title" data-scroll>Featured Products</h2>
+        <div class="products-grid">
+            <div class="product-card" data-product="1">
+                <div class="product-preview" id="product-preview-1"></div>
+                <h3>Modern Chair</h3>
+                <p class="price">$299</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card" data-product="2">
+                <div class="product-preview" id="product-preview-2"></div>
+                <h3>Elegant Lamp</h3>
+                <p class="price">$159</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card" data-product="3">
+                <div class="product-preview" id="product-preview-3"></div>
+                <h3>Minimal Table</h3>
+                <p class="price">$449</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="features-section" id="features">
+        <div class="feature" data-scroll>
+            <div class="feature-icon">
+                <i class="fas fa-box-open"></i>
+            </div>
+            <h3>Premium Packaging</h3>
+            <p>Each product comes in custom-designed protective packaging</p>
+        </div>
+        <div class="feature" data-scroll>
+            <div class="feature-icon">
+                <i class="fas fa-shield-alt"></i>
+            </div>
+            <h3>2-Year Warranty</h3>
+            <p>Comprehensive coverage for all manufacturing defects</p>
+        </div>
+        <div class="feature" data-scroll>
+            <div class="feature-icon">
+                <i class="fas fa-truck"></i>
+            </div>
+            <h3>Fast Shipping</h3>
+            <p>Free expedited shipping on all orders over $100</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>3DStore</h4>
+                <p>Bringing products to life through immersive 3D experiences</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="../../main-code/home.html">Home</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>lushglow.official.beauty@gmail.com</p>
+                <p>+923202677314</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 3DStore Designed by Abbasi-Codes-Hub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
